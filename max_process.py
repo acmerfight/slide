@@ -6,7 +6,7 @@ from multiprocessing import Pool
 
 def f(x):
     while 1:
-        a = 1 + 1
+        a = 2 ** 10000000
 
 if __name__ == '__main__':
     p = Pool(200)
