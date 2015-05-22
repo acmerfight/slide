@@ -12,12 +12,11 @@ func say() {
 }
 
 func hi() {
-	for {
-		fmt.Println("hi")
-	}
+	fmt.Println("hi")
 }
 
 func main() {
+	// 2
 	runtime.GOMAXPROCS(4)
 	go say()
 	fmt.Println("XXX")
