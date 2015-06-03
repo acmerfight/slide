@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 	"time"
 )
 
 func say() {
 	time.Sleep(20)
-	panic("no value for $USER")
+	resp, _ := http.Get("http://example.co/")
+	fmt.Println(resp.Body)
+	//panic("no value for $USER")
 }
 
 func hi() {
