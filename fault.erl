@@ -1,4 +1,4 @@
--module(lib_misc).
+-module(fault).
 
 %% http://www.ituring.com.cn/article/69952
 
