@@ -2,6 +2,9 @@
 
 -export([rpc/4, start/1]).
 
+%% http://www.ituring.com.cn/article/69997
+
+
 start(Node) ->
     spawn(Node, fun() -> loop() end).
 

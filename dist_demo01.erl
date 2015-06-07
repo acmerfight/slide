@@ -2,6 +2,8 @@
 -export([start/0, store/2, lookup/1]).
 
 
+%% http://www.ituring.com.cn/article/69993
+
 start() -> register(kvs, spawn(fun() -> loop() end)).
 
 store(Key, Value) -> rpc({store, Key, Value}).
