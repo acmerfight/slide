@@ -1,5 +1,7 @@
 -module(lib_misc).
 
+%% http://www.ituring.com.cn/article/69952
+
 -export([on_exit/2, start/0, log_error/2, keep_alive/2]).
 
 
