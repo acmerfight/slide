@@ -6,7 +6,7 @@
 
 
 f() ->
-    io:format("this is old code~n").
+    io:format("this is new code~n").
 
 run() ->
     f(),

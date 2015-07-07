@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	// "runtime"
+	"runtime"
 	"time"
 )
 
@@ -16,7 +16,7 @@ func hi() {
 }
 
 func main() {
-	// runtime.GOMAXPROCS(4)
+	runtime.GOMAXPROCS(4)
 	go say()
 	// fmt.Println("XXX")
 	go hi()
